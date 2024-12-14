@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="General Registration Form">   
+    </head>
+    <body bgcolor="black" text="green" font-style="Arial">
+
+        <h1 align="center"><u> Registration Form </u></h1>
+
+        <form action="register.jsp">
+        <table align="center">
+            <tr> 
+                <td><label for="txtFname" required autofocus> First Name </label></td>
+                <td><input type="text" id="txtFname" placeholder="First Name" ></td>
+            </tr>
+            <tr> 
+                <td><label for="txtLname" required> Last Name </label></td>
+                <td><input type="text" id="txtLname" placeholder="Last Name" ></td>
+            </tr>
+            <tr> 
+                <td><label for="txtPw" required> Password </label></td>
+                <td><input type="password" id="txtPw" placeholder="Password" maxlength="2"></td>
+            </tr>
+            <tr> 
+                <td><label for="dob" > Date of Birth </label></td>
+                <td><input type="date" id="dob" placeholder="DD/MM/YYYY" ></td>
+            </tr>
+            <tr> 
+                <td><label for="radGender" > Gender </label></td>
+                <td width="225">
+                    <input type="radio" id="radmale" name="radGender" value="m">Male
+                    <input type="radio" id="radfemale" name="radGender" value="f">Female
+                    <input type="radio" id="radfemale" name="radGender" value="o">Others
+                </td>
+            </tr>
+            <tr> 
+                <td><label for="Mobile" > Mobile </label></td>
+                <td><input type="text" id="txtMob" maxlength="10" pattern="[0-9]+" placeholder="1234567890" required></td>
+            </tr>
+            <tr> 
+                <td><label for="email" > Email </label></td>
+                <td><input type="email" id="email" placeholder="name@abc.com" required></td>
+            </tr>
+            <tr> 
+                <td><label for="txtAraddr" > Address </label></td>
+                <td><textarea id="txtArAddr" rows="5" cols="27" placeholder="Address"></textarea></td>
+            </tr>    
+            <tr> 
+                <td width="150" ><label for="chkSubscribe" > Subscribe Emails </label></td>
+                <td><input type="checkbox" id="chkSubscribe" name="chkSubscribeMails" checked></td>
+            </tr>  
+            <tr> 
+                <td><label for="optSource" > How do you Know about us?</label></td>
+                <td>
+                    
+                    <Select id="optSource" name="optSrc">
+                    <option value="news">NewsPaper</option>
+                    <option value="tv">Television</option>
+                    <option value="friend">Friend</option>
+                    <option value="utube">YouTube</option>
+                    
+                   <!-- <input list="srcList" name="listSrc" id="listSrc">
+                    <datalist id="srcList">
+                        <option value="NewsPaper">
+                        <option value="Television">
+                        <option value="Friend">
+                        <option value="YouTube">
+                    </datalist>
+                    -->
+                </td>
+            </tr>    
+            <tr><td><br></td></tr>
+            <tr> 
+                <td width="120" align="right"><input type="submit" id="btnSubmit" value="Submit" ></td>
+                <td width="120" align="center"><input type="button" id="btnClear" value="Clear"></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
